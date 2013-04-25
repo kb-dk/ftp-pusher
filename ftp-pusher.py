@@ -60,7 +60,7 @@ if not os.path.isdir(coldfolder):
     sys.exit(3)
 
 # get a list of files to transfer
-files = os.listdir(hotfolder)
+files = filter(lambda f: os.path.isfile(os.path.join(hotfolder, f)), os.listdir(hotfolder))
 
 if len(files) == 0:
     if chatty: print("No files to upload.")
