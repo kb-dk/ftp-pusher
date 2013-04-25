@@ -1,0 +1,10 @@
+[folders]
+hotfolder: hotfolder
+coldfolder: coldfolder
+[server]
+address: 127.0.0.1
+dir: /foo/bar
+username: giraffe
+password: zebra
+#timeout in seconds
+timeout: 30
